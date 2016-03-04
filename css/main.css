@@ -1,0 +1,116 @@
+/* line 1, ../scss/_base.scss */
+.box {
+  -moz-border-radius: 50%;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background: #fdff9f;
+  width: 400px;
+  height: 400px;
+  text-align: center;
+  display: table;
+  -moz-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
+  -webkit-box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
+  box-shadow: rgba(0, 0, 255, 0.4) 0 0 25px, rgba(0, 128, 0, 0.2) 0 0 3px 1px inset;
+  -moz-animation-name: slide;
+  -webkit-animation-name: slide;
+  animation-name: slide;
+  -moz-animation-duration: 3s;
+  -webkit-animation-duration: 3s;
+  animation-duration: 3s;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-fill-mode: forward;
+  -webkit-animation-fill-mode: forward;
+  animation-fill-mode: forward;
+}
+/* line 16, ../scss/_base.scss */
+.box h1 {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+@-moz-keyframes slide {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(400px);
+  }
+}
+@-webkit-keyframes slide {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(400px);
+  }
+}
+@keyframes slide {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(400px);
+  }
+}
+/* line 28, ../scss/_base.scss */
+.navbars ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+/* line 34, ../scss/_base.scss */
+.link {
+  padding: 20px 20px 20px 100px;
+  margin: 5px 0 5px -180px;
+  background-color: #8df2a6;
+  max-width: 200px;
+  border-width: 1px;
+  border-style: solid;
+  text-align: right;
+}
+
+/* line 45, ../scss/_base.scss */
+.link:hover {
+  -moz-animation-name: push;
+  -webkit-animation-name: push;
+  animation-name: push;
+  -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -moz-animation-iteration-count: 1;
+  -webkit-animation-iteration-count: 1;
+  animation-iteration-count: 1;
+  -moz-animation-fill-mode: both;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -moz-animation-timing-function: ease-out;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out;
+}
+
+@-moz-keyframes push {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(50px);
+  }
+}
+@-webkit-keyframes push {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(50px);
+  }
+}
+@keyframes push {
+  from {
+    transform: translateX(0px);
+  }
+  to {
+    transform: translateX(50px);
+  }
+}

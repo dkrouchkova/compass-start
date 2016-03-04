@@ -1,0 +1,60 @@
+.box {
+	@include border-radius(50%);
+	background: rgb(253, 255, 159);
+	width: 400px;
+	height: 400px;
+	text-align: center;
+	display: table;
+
+	@include box-shadow(rgba(blue, 0.4) 0 0 25px, rgba(green, 0.2) 0 0 3px 1px inset);
+	
+	@include animation-name(slide);
+	@include animation-duration(3s);
+	@include animation-iteration-count(1);
+	@include animation-fill-mode(forward);
+
+	h1 {
+		display: table-cell;
+		vertical-align: middle;
+	} //h1 - this table stuff destroys other formatting fyi
+}
+
+@include keyframes(slide) {
+	from {transform: translateX(0px)}
+	to {transform: translateX(400px)}
+}
+
+.navbars {
+	ul {
+		list-style-type: none;
+		padding-left: 0;
+	}//ul
+}
+
+.link {
+	padding: 20px 20px 20px 100px;
+	margin: 5px 0 5px -180px;
+	background-color: rgba(141,242,166,1);
+	max-width: 200px;
+	border-width: 1px;
+	border-style: solid;
+	text-align: right;
+
+}
+
+.link:hover {
+	@include animation-name(push);
+	@include animation-duration(1s);
+	@include animation-iteration-count(1);
+	@include animation-fill-mode(both);
+	@include animation-timing-function(ease-out);
+}
+
+@include keyframes(push) {
+	from {transform: translateX(0px)}
+	to {transform: translateX(50px)}
+}
+
+
+
+
